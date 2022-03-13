@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Hackerrank Shortcut Keys",
+    "version": "1.0",
+    "description": "Easily Run and Submit Code on Hackerrank without leaving keyboard. Use ctrl+alt+r to Run and ctrl+alt+s to Submit Code.",
+
+
+    "content_scripts": [{
+        "matches": ["https://*.hackerrank.com/*"],
+        "js": ["js/hackerrank.js"],
+        "run_at": "document_end"
+    }, {
+        "matches": ["https://*.codechef.com/*"],
+        "js": ["js/codechef.js"],
+        "run_at": "document_end"
+    }],
+
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
