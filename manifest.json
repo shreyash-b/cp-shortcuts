@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Hackerrank Shortcut Keys",
+    "name": "CP Shortcut Keys",
     "version": "1.0",
-    "description": "Easily Run and Submit Code on Hackerrank without leaving keyboard. Use ctrl+alt+r to Run and ctrl+alt+s to Submit Code.",
+    "description": "Easily Run and Submit Code on Competitive Programming Websites without leaving keyboard. Use ctrl+alt+r to Run and ctrl+alt+s to Submit Code.",
 
 
     "content_scripts": [{
