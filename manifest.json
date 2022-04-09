@@ -7,12 +7,10 @@
 
     "content_scripts": [{
         "matches": ["https://*.hackerrank.com/*"],
-        "js": ["js/hackerrank.js"],
-        "run_at": "document_end"
+        "js": ["js/sites/hackerrank.js", "js/main.js"]
     }, {
         "matches": ["https://*.codechef.com/*"],
-        "js": ["js/codechef.js"],
-        "run_at": "document_end"
+        "js": ["js/sites/codechef.js", "js/main.js"]
     }],
 
     "icons": {

@@ -1,6 +1,5 @@
-function runCode() {
+function runCode(runBtn) {
     // Find the "Run Code" button and press it
-    runBtn = document.querySelector(".hr-monaco-compile");
     if (!runBtn) {
         console.log("Unable to find Run Code button!!");
     } else {
@@ -8,9 +7,8 @@ function runCode() {
     }
 }
 
-function submitCode() {
+function submitCode(submitBtn) {
     // Find the "Submit" button and press it
-    submitBtn = document.querySelector(".hr-monaco-submit");
     if (!submitBtn) {
         console.log("Unable to find Submit button!!");
     } else {
@@ -20,7 +18,7 @@ function submitCode() {
 
 document.addEventListener("keyup", (e) => {
     if (e.ctrlKey && e.altKey && e.key == "r")
-        runCode();
+        runCode(getRunBtn())
     if (e.ctrlKey && e.altKey && e.key == "s")
-        submitCode();
+        submitCode(getSubmitBtn());
 });
